@@ -18,7 +18,11 @@ public class Constant {
     public final static String CUBE_IN_TRANSFORMATION = "cube_in transformation";
     public final static String CUBE_OUT_SCALING_TRANSFORMATION = "cube_out_scaling transformation";
     public final static String CUBE_IN_SCALING_TRANSFORMATION = "cube_in_scaling transformation";
+    public final static String CUBE_OUT_DEPTH_TRANSFORMATION = "cube_out_depth transformation";
+    public final static String CUBE_IN_DEPTH_TRANSFORMATION = "cube_in_depth transformation";
     public final static String HINGE_TRANSFORMATION = "hinge transformation";
     public final static String GATE_TRANSFORMATION = "gate transformation";
     public final static String TOSS_TRANSFORMATION = "toss transformation";
+    public final static String FAN_TRANSFORMATION = "fan transformation";
+
 }

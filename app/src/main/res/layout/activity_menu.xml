@@ -204,13 +204,39 @@
                 android:textSize="20dp" />
 
             <Button
+                android:id="@+id/cubeOutDepthTransformation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:background="@drawable/button_background"
+                android:paddingLeft="15dp"
+                android:text="15. Cube Out Depth Transformation"
+                android:textAlignment="viewStart"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:textSize="20dp" />
+
+            <Button
+                android:id="@+id/cubeInDepthTransformation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:background="@drawable/button_background"
+                android:paddingLeft="15dp"
+                android:text="16. Cube In Depth Transformation"
+                android:textAlignment="viewStart"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:textSize="20dp" />
+
+            <Button
                 android:id="@+id/hingeTransformation"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="3dp"
                 android:background="@drawable/button_background"
                 android:paddingLeft="15dp"
-                android:text="15. Hinge Transformation"
+                android:text="17. Hinge Transformation"
                 android:textAlignment="viewStart"
                 android:textAllCaps="false"
                 android:textColor="@android:color/white"
@@ -223,7 +249,7 @@
                 android:layout_margin="3dp"
                 android:background="@drawable/button_background"
                 android:paddingLeft="15dp"
-                android:text="16. Gate Transformation"
+                android:text="18. Gate Transformation"
                 android:textAlignment="viewStart"
                 android:textAllCaps="false"
                 android:textColor="@android:color/white"
@@ -236,12 +262,24 @@
                 android:layout_margin="3dp"
                 android:background="@drawable/button_background"
                 android:paddingLeft="15dp"
-                android:text="17. Toss Transformation"
+                android:text="19. Toss Transformation"
                 android:textAlignment="viewStart"
                 android:textAllCaps="false"
                 android:textColor="@android:color/white"
                 android:textSize="20dp" />
 
+            <Button
+                android:id="@+id/fanTransformation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:background="@drawable/button_background"
+                android:paddingLeft="15dp"
+                android:text="20. Fan Transformation"
+                android:textAlignment="viewStart"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:textSize="20dp" />
         </LinearLayout>
 
     </ScrollView>

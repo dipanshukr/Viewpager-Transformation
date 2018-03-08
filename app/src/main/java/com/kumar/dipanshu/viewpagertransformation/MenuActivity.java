@@ -11,8 +11,8 @@ import android.widget.Button;
 public class MenuActivity extends AppCompatActivity implements View.OnClickListener {
 
 
-    Button simple, depth, zoomOut, clock_Spin, antiClock_Spin, fidgetSpinner, vertical_Flip, horizontal_Flip,
-            pop, fadeOut, cubeOut, cubeIn, cubeOutScale, cubeInScale, hinge, gate, toss;
+    Button simple, depth, zoomOut, clock_Spin, antiClock_Spin, fidgetSpinner, vertical_Flip, horizontal_Flip, pop,
+            fadeOut, cubeOut, cubeIn, cubeOutScale, cubeInScale, cubeOutDepth, cubeInDepth, hinge, gate, toss, fan;
 
     Intent intent;
     FloatingActionButton floatingActionButton;
@@ -58,9 +58,12 @@ public class MenuActivity extends AppCompatActivity implements View.OnClickListe
         cubeIn = (Button) findViewById(R.id.cubeInTransformation);
         cubeOutScale = (Button) findViewById(R.id.cubeOutScalingTransformation);
         cubeInScale = (Button) findViewById(R.id.cubeInScalingTransformation);
+        cubeOutDepth = (Button) findViewById(R.id.cubeOutDepthTransformation);
+        cubeInDepth = (Button) findViewById(R.id.cubeInDepthTransformation);
         hinge = (Button) findViewById(R.id.hingeTransformation);
         gate = (Button) findViewById(R.id.gateTransformation);
         toss = (Button) findViewById(R.id.tossTransformation);
+        fan = (Button) findViewById(R.id.fanTransformation);
     }
 
     private void attachListner() {
@@ -78,9 +81,12 @@ public class MenuActivity extends AppCompatActivity implements View.OnClickListe
         cubeIn.setOnClickListener(this);
         cubeOutScale.setOnClickListener(this);
         cubeInScale.setOnClickListener(this);
+        cubeOutDepth.setOnClickListener(this);
+        cubeInDepth.setOnClickListener(this);
         hinge.setOnClickListener(this);
         gate.setOnClickListener(this);
         toss.setOnClickListener(this);
+        fan.setOnClickListener(this);
     }
 
     @Override
@@ -156,6 +162,16 @@ public class MenuActivity extends AppCompatActivity implements View.OnClickListe
                 intent.putExtra(Constant.TRANSFORMATION, Constant.CUBE_IN_SCALING_TRANSFORMATION);
                 startActivity(intent);
                 break;
+            case R.id.cubeOutDepthTransformation:
+                intent = new Intent(MenuActivity.this, TransformationActivity.class);
+                intent.putExtra(Constant.TRANSFORMATION, Constant.CUBE_OUT_DEPTH_TRANSFORMATION);
+                startActivity(intent);
+                break;
+            case R.id.cubeInDepthTransformation:
+                intent = new Intent(MenuActivity.this, TransformationActivity.class);
+                intent.putExtra(Constant.TRANSFORMATION, Constant.CUBE_IN_DEPTH_TRANSFORMATION);
+                startActivity(intent);
+                break;
             case R.id.hingeTransformation:
                 intent = new Intent(MenuActivity.this, TransformationActivity.class);
                 intent.putExtra(Constant.TRANSFORMATION, Constant.HINGE_TRANSFORMATION);
@@ -171,6 +187,12 @@ public class MenuActivity extends AppCompatActivity implements View.OnClickListe
                 intent.putExtra(Constant.TRANSFORMATION, Constant.TOSS_TRANSFORMATION);
                 startActivity(intent);
                 break;
+            case R.id.fanTransformation:
+                intent = new Intent(MenuActivity.this, TransformationActivity.class);
+                intent.putExtra(Constant.TRANSFORMATION, Constant.FAN_TRANSFORMATION);
+                startActivity(intent);
+                break;
         }
     }
+
 }
