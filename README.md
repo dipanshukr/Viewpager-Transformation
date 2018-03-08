@@ -28,7 +28,7 @@
 * [Fan Transformation](https://github.com/dipanshukr/ViewPagerTransformations/wiki/Fan-Transformation)
 
 ## Simple Transformation
-<img src="Extras/simple transformation.gif" />
+<img src="Extras/Simple transformation.gif" />
 
 ## Depth Transformation
 
