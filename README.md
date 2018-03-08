@@ -1,5 +1,9 @@
 # ViewPagerTransformations
 
+<a href="https://goo.gl/WXW8Dc">
+  <img alt="Android app on Google Play" src="https://developer.android.com/images/brand/en_app_rgb_wo_45.png" />
+</a>
+
 ### List of Transformations
 
 * Simple Transformation
@@ -22,3 +26,35 @@
 * [Gate Transformation](https://github.com/dipanshukr/ViewPagerTransformations/wiki/Gate-Transformation)
 * [Toss Transformation](https://github.com/dipanshukr/ViewPagerTransformations/wiki/Toss-Transformation)
 * [Fan Transformation](https://github.com/dipanshukr/ViewPagerTransformations/wiki/Fan-Transformation)
+
+## Simple Transformation
+<img src="Extras/simple transformation.gif" />
+
+## Depth Transformation
+
+
+## Zoom Out Transformation
+
+
+## Clock Spin Transformation
+
+
+## AntiClock Spin Transformation
+
+
+## Fidget Spin Transformation
+
+
+## Vertical Flip Transformation
+
+
+## Horizontal Flip Transformation
+
+
+## Pop Transformation
+
+
+## Fade Out Transformation
+
+
+## Cube Out Transformation
