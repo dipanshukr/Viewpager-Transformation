@@ -25,7 +25,7 @@ public class VerticalFlipTransformation implements ViewPager.PageTransformer {
         }
         else if (position <= 0) {    // [-1,0]
             page.setAlpha(1);
-            page.setRotationY(1800 *(1-Math.abs(position)+1));
+            page.setRotationY(180 *(1-Math.abs(position)+1));
 
         }
         else if (position <= 1) {    // (0,1]

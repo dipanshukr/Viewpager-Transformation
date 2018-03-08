@@ -18,6 +18,7 @@ import com.kumar.dipanshu.viewpagertransformation.Fragments.ThirdFragment;
 import com.kumar.dipanshu.viewpagertransformation.Transformations.AntiClockSpinTransformation;
 import com.kumar.dipanshu.viewpagertransformation.Transformations.Clock_SpinTransformation;
 import com.kumar.dipanshu.viewpagertransformation.Transformations.CubeInRotationTransformation;
+import com.kumar.dipanshu.viewpagertransformation.Transformations.CubeInScalingTransformation;
 import com.kumar.dipanshu.viewpagertransformation.Transformations.CubeOutRotationTransformation;
 import com.kumar.dipanshu.viewpagertransformation.Transformations.CubeOutScalingTransformation;
 import com.kumar.dipanshu.viewpagertransformation.Transformations.DepthTransformation;
@@ -28,7 +29,6 @@ import com.kumar.dipanshu.viewpagertransformation.Transformations.HingeTransform
 import com.kumar.dipanshu.viewpagertransformation.Transformations.HorizontalFlipTransformation;
 import com.kumar.dipanshu.viewpagertransformation.Transformations.PopTransformation;
 import com.kumar.dipanshu.viewpagertransformation.Transformations.SimpleTransformation;
-import com.kumar.dipanshu.viewpagertransformation.Transformations.SlowTransformation;
 import com.kumar.dipanshu.viewpagertransformation.Transformations.TossTransformation;
 import com.kumar.dipanshu.viewpagertransformation.Transformations.VerticalFlipTransformation;
 import com.kumar.dipanshu.viewpagertransformation.Transformations.ZoomOutTransformation;
@@ -64,10 +64,10 @@ public class TransformationActivity extends AppCompatActivity {
         CubeOutRotationTransformation cubeOutRotationTransformation = new CubeOutRotationTransformation();
         CubeInRotationTransformation cubeInRotationTransformation = new CubeInRotationTransformation();
         CubeOutScalingTransformation cubeOutScalingTransformation = new CubeOutScalingTransformation();
+        CubeInScalingTransformation cubeInScalingTransformation = new CubeInScalingTransformation();
         HingeTransformation hingeTransformation = new HingeTransformation();
         GateTransformation gateTransformation = new GateTransformation();
         TossTransformation tossTransformation = new TossTransformation();
-        SlowTransformation slowTransformation = new SlowTransformation();
 
 
         intent = getIntent();
@@ -114,6 +114,9 @@ public class TransformationActivity extends AppCompatActivity {
             case Constant.CUBE_OUT_SCALING_TRANSFORMATION:
                 viewPager.setPageTransformer(true, cubeOutScalingTransformation);
                 break;
+            case Constant.CUBE_IN_SCALING_TRANSFORMATION:
+                viewPager.setPageTransformer(true, cubeInScalingTransformation);
+                break;
             case Constant.HINGE_TRANSFORMATION:
                 viewPager.setPageTransformer(true, hingeTransformation);
                 break;
@@ -122,9 +125,6 @@ public class TransformationActivity extends AppCompatActivity {
                 break;
             case Constant.TOSS_TRANSFORMATION:
                 viewPager.setPageTransformer(true, tossTransformation);
-                break;
-            case Constant.SLOW__TRANSFORMATION:
-                viewPager.setPageTransformer(true, slowTransformation);
                 break;
         }
     }

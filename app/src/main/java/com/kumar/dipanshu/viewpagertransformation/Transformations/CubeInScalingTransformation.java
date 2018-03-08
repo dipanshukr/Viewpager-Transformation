@@ -1,13 +1,11 @@
 package com.kumar.dipanshu.viewpagertransformation.Transformations;
 
 import android.support.v4.view.ViewPager;
-import android.util.Log;
 import android.view.View;
 
-public class CubeInRotationTransformation implements ViewPager.PageTransformer{
+public class CubeInScalingTransformation implements ViewPager.PageTransformer {
     @Override
     public void transformPage(View page, float position) {
-
         page.setCameraDistance(20000);
 
 
@@ -31,6 +29,16 @@ public class CubeInRotationTransformation implements ViewPager.PageTransformer{
         else{    // (1,+Infinity]
             // This page is way off-screen to the right.
             page.setAlpha(0);
+
+        }
+
+
+
+        if (Math.abs(position) <=0.5){
+            page.setScaleY(Math.max(.4f,1-Math.abs(position)));
+        }
+        else if (Math.abs(position) <=1){
+            page.setScaleY(Math.max(.4f,Math.abs(position)));
 
         }
 

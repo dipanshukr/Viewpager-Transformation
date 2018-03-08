@@ -191,13 +191,26 @@
                 android:textSize="20dp" />
 
             <Button
+                android:id="@+id/cubeInScalingTransformation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:background="@drawable/button_background"
+                android:paddingLeft="15dp"
+                android:text="14. Cube In Scaling Transformation"
+                android:textAlignment="viewStart"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:textSize="20dp" />
+
+            <Button
                 android:id="@+id/hingeTransformation"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="3dp"
                 android:background="@drawable/button_background"
                 android:paddingLeft="15dp"
-                android:text="14. Hinge Transformation"
+                android:text="15. Hinge Transformation"
                 android:textAlignment="viewStart"
                 android:textAllCaps="false"
                 android:textColor="@android:color/white"
@@ -210,7 +223,7 @@
                 android:layout_margin="3dp"
                 android:background="@drawable/button_background"
                 android:paddingLeft="15dp"
-                android:text="15. Gate Transformation"
+                android:text="16. Gate Transformation"
                 android:textAlignment="viewStart"
                 android:textAllCaps="false"
                 android:textColor="@android:color/white"
@@ -223,19 +236,8 @@
                 android:layout_margin="3dp"
                 android:background="@drawable/button_background"
                 android:paddingLeft="15dp"
-                android:text="16. Toss Transformation"
+                android:text="17. Toss Transformation"
                 android:textAlignment="viewStart"
-                android:textAllCaps="false"
-                android:textColor="@android:color/white"
-                android:textSize="20dp" />
-
-            <Button
-                android:id="@+id/slowTransformation"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="3dp"
-                android:background="@drawable/button_background"
-                android:text="Slow Transformation"
                 android:textAllCaps="false"
                 android:textColor="@android:color/white"
                 android:textSize="20dp" />

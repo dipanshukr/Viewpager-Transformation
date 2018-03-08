@@ -12,7 +12,7 @@ public class MenuActivity extends AppCompatActivity implements View.OnClickListe
 
 
     Button simple, depth, zoomOut, clock_Spin, antiClock_Spin, fidgetSpinner, vertical_Flip, horizontal_Flip,
-            pop, fadeOut, cubeOut, cubeIn, cubeOutScale, hinge, gate, toss, slow;
+            pop, fadeOut, cubeOut, cubeIn, cubeOutScale, cubeInScale, hinge, gate, toss;
 
     Intent intent;
     FloatingActionButton floatingActionButton;
@@ -27,7 +27,7 @@ public class MenuActivity extends AppCompatActivity implements View.OnClickListe
         floatingActionButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String url = "http://www.example.com";
+                String url = "https://github.com/dipanshukr/ViewPagerTransformations";
                 Intent intentGithub = new Intent(Intent.ACTION_VIEW);
                 intentGithub.setData(Uri.parse(url));
                 startActivity(intentGithub);
@@ -57,10 +57,10 @@ public class MenuActivity extends AppCompatActivity implements View.OnClickListe
         cubeOut = (Button) findViewById(R.id.cubeOutTransformation);
         cubeIn = (Button) findViewById(R.id.cubeInTransformation);
         cubeOutScale = (Button) findViewById(R.id.cubeOutScalingTransformation);
+        cubeInScale = (Button) findViewById(R.id.cubeInScalingTransformation);
         hinge = (Button) findViewById(R.id.hingeTransformation);
         gate = (Button) findViewById(R.id.gateTransformation);
-        toss = (Button) findViewById(R.id.hingeTransformation);
-        slow = (Button) findViewById(R.id.slowTransformation);
+        toss = (Button) findViewById(R.id.tossTransformation);
     }
 
     private void attachListner() {
@@ -77,10 +77,10 @@ public class MenuActivity extends AppCompatActivity implements View.OnClickListe
         cubeOut.setOnClickListener(this);
         cubeIn.setOnClickListener(this);
         cubeOutScale.setOnClickListener(this);
+        cubeInScale.setOnClickListener(this);
         hinge.setOnClickListener(this);
         gate.setOnClickListener(this);
         toss.setOnClickListener(this);
-        slow.setOnClickListener(this);
     }
 
     @Override
@@ -151,6 +151,11 @@ public class MenuActivity extends AppCompatActivity implements View.OnClickListe
                 intent.putExtra(Constant.TRANSFORMATION, Constant.CUBE_OUT_SCALING_TRANSFORMATION);
                 startActivity(intent);
                 break;
+            case R.id.cubeInScalingTransformation:
+                intent = new Intent(MenuActivity.this, TransformationActivity.class);
+                intent.putExtra(Constant.TRANSFORMATION, Constant.CUBE_IN_SCALING_TRANSFORMATION);
+                startActivity(intent);
+                break;
             case R.id.hingeTransformation:
                 intent = new Intent(MenuActivity.this, TransformationActivity.class);
                 intent.putExtra(Constant.TRANSFORMATION, Constant.HINGE_TRANSFORMATION);
@@ -164,11 +169,6 @@ public class MenuActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.tossTransformation:
                 intent = new Intent(MenuActivity.this, TransformationActivity.class);
                 intent.putExtra(Constant.TRANSFORMATION, Constant.TOSS_TRANSFORMATION);
-                startActivity(intent);
-                break;
-            case R.id.slowTransformation:
-                intent = new Intent(MenuActivity.this, TransformationActivity.class);
-                intent.putExtra(Constant.TRANSFORMATION, Constant.SLOW__TRANSFORMATION);
                 startActivity(intent);
                 break;
         }
