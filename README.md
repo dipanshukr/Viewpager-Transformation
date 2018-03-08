@@ -30,7 +30,7 @@
 ## Simple Transformation
 <img src="Extras/Simple transformation.gif" />
 
-## Depth Transformation
+## [Depth Transformation](https://github.com/dipanshukr/ViewPagerTransformations/wiki/Depth-Transformation)
 
 
 ## Zoom Out Transformation
