@@ -49,11 +49,11 @@
     }
 ```
 
-### 
-### [Clock Spin Transformation](https://github.com/dipanshukr/ViewPagerTransformations/wiki/Clock-Spin-Transformation)
+### Rotation Transformation
+* [Clock Spin Transformation](https://github.com/dipanshukr/ViewPagerTransformations/wiki/Clock-Spin-Transformation)
 <img src="Extras/Clock Spin.gif" width="145" height="250"/>
 
-### [AntiClock Spin Transformation](https://github.com/dipanshukr/ViewPagerTransformations/wiki/AntiClock-Spin-Transformation)
+* [AntiClock Spin Transformation](https://github.com/dipanshukr/ViewPagerTransformations/wiki/AntiClock-Spin-Transformation)
 <img src="Extras/AntiClock Spin.gif" width="145" height="250"/>
 
 ### [Fidget Spin Transformation](https://github.com/dipanshukr/ViewPagerTransformations/wiki/Fidget-Spin-Transformation)
@@ -71,23 +71,42 @@
 ### [Fade Out Transformation](https://github.com/dipanshukr/ViewPagerTransformations/wiki/Fade-Out-Transformation)
 <img src="Extras/Fade Out.gif" width="145" height="250"/>
 
-### [Cube Out Transformation](https://github.com/dipanshukr/ViewPagerTransformations/wiki/Cube-Out-Transformation)
-<img src="Extras/Cube Out.gif" width="145" height="250"/>
-
-### [Cube In Transformation](https://github.com/dipanshukr/ViewPagerTransformations/wiki/Cube-In-Transformation)
-<img src="Extras/Cube In.gif" width="145" height="250"/>
-
-### [Cube Out Scaling Transformation](https://github.com/dipanshukr/ViewPagerTransformations/wiki/Cube-Out-Scaling-Transformation)
-<img src="Extras/Cube Out Scaling.gif" width="145" height="250"/>
-
-### [Cube In Scaling Transformation](https://github.com/dipanshukr/ViewPagerTransformations/wiki/Cube-In-Scaling-Transformation)
-<img src="Extras/Cube In Scaling.gif" width="145" height="250"/>
-
-### [Cube Out Depth Transformation](https://github.com/dipanshukr/ViewPagerTransformations/wiki/Cube-Out-Depth-Transformation)
-<img src="Extras/Cube Out Depth.gif" width="145" height="250"/>
-
-### [Cube In Depth Transformation](https://github.com/dipanshukr/ViewPagerTransformations/wiki/Cube-In-Depth-Transformation)
-<img src="Extras/Cube In Depth.gif" width="145" height="250"/>
+### Cube Transformations
+<table>
+    <tr>
+        <th>
+            <img src="Extras/Cube Out.gif" width="145" height="250"/>
+        </th>
+        <th>
+            <img src="Extras/Cube In.gif" width="145" height="250"/>
+        </th>
+        <th>
+            <img src="Extras/Cube Out Scaling.gif" width="145" height="250"/>
+        </th>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/dipanshukr/ViewPagerTransformations/wiki/Cube-Out-Transformation">Cube Out</a></td>
+    	<td><a href="https://github.com/dipanshukr/ViewPagerTransformations/wiki/Cube-In-Transformation">Cube In</a></td>
+      <td><a href="https://github.com/dipanshukr/ViewPagerTransformations/wiki/Cube-Out-Scaling-Transformation">Cube Out Scaling</a></td>
+    </tr>
+  </table>
+  <table>
+        <th>
+            <img src="Extras/Cube In Scaling.gif" width="145" height="250"/>
+        </th>
+        <th>
+            <img src="Extras/Cube Out Depth.gif" width="145" height="250"/>
+        </th>
+        <th>
+            <img src="Extras/Cube In Depth.gif" width="145" height="250"/>
+        </th>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/dipanshukr/ViewPagerTransformations/wiki/Cube-In-Scaling-Transformation">Cube In Scaling</a></td>
+      <td><a href="https://github.com/dipanshukr/ViewPagerTransformations/wiki/Cube-Out-Depth-Transformation">Cube Out Depth</a></td>
+      <td><a href="https://github.com/dipanshukr/ViewPagerTransformations/wiki/Cube-In-Depth-Transformation">Cube In Depth</a></td>
+    </tr>
+</table>
 
 ### [Hinge Transformation](https://github.com/dipanshukr/ViewPagerTransformations/wiki/Hinge-Transformation)
 <img src="Extras/Hinge.gif" width="145" height="250"/>
