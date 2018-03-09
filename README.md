@@ -4,10 +4,10 @@
   <img alt="Android app on Google Play" src="https://developer.android.com/images/brand/en_app_rgb_wo_45.png" />
 </a>
 
-### Simple Transformation
+* Simple Transformation
 <img src="Extras/Simple.gif" width="145" height="250"/>
 
-### [Depth Transformation](https://github.com/dipanshukr/ViewPagerTransformations/wiki/Depth-Transformation)
+* [Depth Transformation](https://github.com/dipanshukr/ViewPagerTransformations/wiki/Depth-Transformation)
 <img src="Extras/Depth.gif" width="145" height="250"/>
 
 ```java
@@ -31,7 +31,7 @@
     }
 ```
 
-### [Zoom Out Transformation](https://github.com/dipanshukr/ViewPagerTransformations/wiki/Zoom-Out-Transformation)
+* [Zoom Out Transformation](https://github.com/dipanshukr/ViewPagerTransformations/wiki/Zoom-Out-Transformation)
 <img src="Extras/Zoom Out.gif" width="145" height="250"/>
 
 ```java
@@ -49,6 +49,7 @@
     }
 ```
 
+### 
 ### [Clock Spin Transformation](https://github.com/dipanshukr/ViewPagerTransformations/wiki/Clock-Spin-Transformation)
 <img src="Extras/Clock Spin.gif" width="145" height="250"/>
 
