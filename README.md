@@ -1,5 +1,5 @@
 # ViewPagerTransformations
-### "Why use dependencies when you create your own transformations ?"
+## Why use dependencies when you create your own transformations ?
 
 In this post i am gonna show you some view pager animations.
 Animation in view pager is implemented using PageTransformer interface which is called whenever we slide view pager. It is called twice for every slide event, because atmost two pages are visible on the screen. The position for first page is between (-1,0) and second page is (0,1). 
