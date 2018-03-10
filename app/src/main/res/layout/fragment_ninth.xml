@@ -15,14 +15,14 @@
         android:layout_height="match_parent"
         app:cardCornerRadius="20dp"
         app:cardElevation="0dp"
-        app:cardBackgroundColor="@android:color/holo_red_light">
+        app:cardBackgroundColor="#2e0be0">
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:gravity="center"
             android:text="9"
-            android:textColor="@android:color/black"
+            android:textColor="@android:color/white"
             android:textSize="100dp"
             android:textStyle="bold" />
 

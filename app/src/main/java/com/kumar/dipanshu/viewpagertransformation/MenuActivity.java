@@ -8,19 +8,23 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 
+
 public class MenuActivity extends AppCompatActivity implements View.OnClickListener {
 
 
-    Button simple, depth, zoomOut, clock_Spin, antiClock_Spin, fidgetSpinner, vertical_Flip, horizontal_Flip, pop,
-            fadeOut, cubeOut, cubeIn, cubeOutScale, cubeInScale, cubeOutDepth, cubeInDepth, hinge, gate, toss, fan;
+    Button simple, depth, zoomOut, clock_Spin, antiClock_Spin, fidgetSpinner, vertical_Flip, horizontal_Flip, pop, fadeOut,
+            cubeOut, cubeIn, cubeOutScale, cubeInScale, cubeOutDepth, cubeInDepth, hinge, gate, toss, fan, spinner, vertical_Shut;
 
     Intent intent;
     FloatingActionButton floatingActionButton;
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu);
+
 
 
         floatingActionButton = (FloatingActionButton) findViewById(R.id.fab);
@@ -64,6 +68,9 @@ public class MenuActivity extends AppCompatActivity implements View.OnClickListe
         gate = (Button) findViewById(R.id.gateTransformation);
         toss = (Button) findViewById(R.id.tossTransformation);
         fan = (Button) findViewById(R.id.fanTransformation);
+        spinner = (Button) findViewById(R.id.spinnerTransformation);
+        vertical_Shut = (Button) findViewById(R.id.verticalShutTransformation);
+
     }
 
     private void attachListner() {
@@ -87,6 +94,8 @@ public class MenuActivity extends AppCompatActivity implements View.OnClickListe
         gate.setOnClickListener(this);
         toss.setOnClickListener(this);
         fan.setOnClickListener(this);
+        spinner.setOnClickListener(this);
+        vertical_Shut.setOnClickListener(this);
     }
 
     @Override
@@ -190,6 +199,16 @@ public class MenuActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.fanTransformation:
                 intent = new Intent(MenuActivity.this, TransformationActivity.class);
                 intent.putExtra(Constant.TRANSFORMATION, Constant.FAN_TRANSFORMATION);
+                startActivity(intent);
+                break;
+            case R.id.spinnerTransformation:
+                intent = new Intent(MenuActivity.this, TransformationActivity.class);
+                intent.putExtra(Constant.TRANSFORMATION, Constant.SPINNER_TRANSFORMATION);
+                startActivity(intent);
+                break;
+            case R.id.verticalShutTransformation:
+                intent = new Intent(MenuActivity.this, TransformationActivity.class);
+                intent.putExtra(Constant.TRANSFORMATION, Constant.VERTICAL_SHUT_TRANSFORMATION);
                 startActivity(intent);
                 break;
         }

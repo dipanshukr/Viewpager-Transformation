@@ -13,6 +13,7 @@
         android:fillViewport="true"
         android:paddingLeft="15dp"
         android:paddingRight="15dp"
+        android:paddingBottom="5dp"
         android:paddingTop="10dp"
         android:scrollbars="none">
 
@@ -32,6 +33,7 @@
                 android:textAlignment="viewStart"
                 android:textAllCaps="false"
                 android:textColor="@android:color/white"
+                android:foreground="?attr/selectableItemBackground"
                 android:textSize="20dp" />
 
             <Button
@@ -45,6 +47,7 @@
                 android:textAlignment="viewStart"
                 android:textAllCaps="false"
                 android:textColor="@android:color/white"
+                android:foreground="?attr/selectableItemBackground"
                 android:textSize="20dp" />
 
             <Button
@@ -58,6 +61,7 @@
                 android:textAlignment="viewStart"
                 android:textAllCaps="false"
                 android:textColor="@android:color/white"
+                android:foreground="?attr/selectableItemBackground"
                 android:textSize="20dp" />
 
             <Button
@@ -71,6 +75,7 @@
                 android:textAlignment="viewStart"
                 android:textAllCaps="false"
                 android:textColor="@android:color/white"
+                android:foreground="?attr/selectableItemBackground"
                 android:textSize="20dp" />
 
             <Button
@@ -84,6 +89,7 @@
                 android:textAlignment="viewStart"
                 android:textAllCaps="false"
                 android:textColor="@android:color/white"
+                android:foreground="?attr/selectableItemBackground"
                 android:textSize="20dp" />
 
             <Button
@@ -97,6 +103,7 @@
                 android:textAlignment="viewStart"
                 android:textAllCaps="false"
                 android:textColor="@android:color/white"
+                android:foreground="?attr/selectableItemBackground"
                 android:textSize="20dp" />
 
             <Button
@@ -110,6 +117,7 @@
                 android:textAlignment="viewStart"
                 android:textAllCaps="false"
                 android:textColor="@android:color/white"
+                android:foreground="?attr/selectableItemBackground"
                 android:textSize="20dp" />
 
             <Button
@@ -123,6 +131,7 @@
                 android:textAlignment="viewStart"
                 android:textAllCaps="false"
                 android:textColor="@android:color/white"
+                android:foreground="?attr/selectableItemBackground"
                 android:textSize="20dp" />
 
             <Button
@@ -136,6 +145,7 @@
                 android:textAlignment="viewStart"
                 android:textAllCaps="false"
                 android:textColor="@android:color/white"
+                android:foreground="?attr/selectableItemBackground"
                 android:textSize="20dp" />
 
             <Button
@@ -149,6 +159,7 @@
                 android:textAlignment="viewStart"
                 android:textAllCaps="false"
                 android:textColor="@android:color/white"
+                android:foreground="?attr/selectableItemBackground"
                 android:textSize="20dp" />
 
             <Button
@@ -162,6 +173,7 @@
                 android:textAlignment="viewStart"
                 android:textAllCaps="false"
                 android:textColor="@android:color/white"
+                android:foreground="?attr/selectableItemBackground"
                 android:textSize="20dp" />
 
             <Button
@@ -175,6 +187,7 @@
                 android:textAlignment="viewStart"
                 android:textAllCaps="false"
                 android:textColor="@android:color/white"
+                android:foreground="?attr/selectableItemBackground"
                 android:textSize="20dp" />
 
             <Button
@@ -188,6 +201,7 @@
                 android:textAlignment="viewStart"
                 android:textAllCaps="false"
                 android:textColor="@android:color/white"
+                android:foreground="?attr/selectableItemBackground"
                 android:textSize="20dp" />
 
             <Button
@@ -201,6 +215,7 @@
                 android:textAlignment="viewStart"
                 android:textAllCaps="false"
                 android:textColor="@android:color/white"
+                android:foreground="?attr/selectableItemBackground"
                 android:textSize="20dp" />
 
             <Button
@@ -214,6 +229,7 @@
                 android:textAlignment="viewStart"
                 android:textAllCaps="false"
                 android:textColor="@android:color/white"
+                android:foreground="?attr/selectableItemBackground"
                 android:textSize="20dp" />
 
             <Button
@@ -227,6 +243,7 @@
                 android:textAlignment="viewStart"
                 android:textAllCaps="false"
                 android:textColor="@android:color/white"
+                android:foreground="?attr/selectableItemBackground"
                 android:textSize="20dp" />
 
             <Button
@@ -240,6 +257,7 @@
                 android:textAlignment="viewStart"
                 android:textAllCaps="false"
                 android:textColor="@android:color/white"
+                android:foreground="?attr/selectableItemBackground"
                 android:textSize="20dp" />
 
             <Button
@@ -253,6 +271,7 @@
                 android:textAlignment="viewStart"
                 android:textAllCaps="false"
                 android:textColor="@android:color/white"
+                android:foreground="?attr/selectableItemBackground"
                 android:textSize="20dp" />
 
             <Button
@@ -266,6 +285,7 @@
                 android:textAlignment="viewStart"
                 android:textAllCaps="false"
                 android:textColor="@android:color/white"
+                android:foreground="?attr/selectableItemBackground"
                 android:textSize="20dp" />
 
             <Button
@@ -279,6 +299,35 @@
                 android:textAlignment="viewStart"
                 android:textAllCaps="false"
                 android:textColor="@android:color/white"
+                android:foreground="?attr/selectableItemBackground"
+                android:textSize="20dp" />
+
+            <Button
+                android:id="@+id/spinnerTransformation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:background="@drawable/button_background"
+                android:foreground="?attr/selectableItemBackground"
+                android:paddingLeft="15dp"
+                android:text="21. Spinner Transformation"
+                android:textAlignment="viewStart"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:textSize="20dp" />
+
+            <Button
+                android:id="@+id/verticalShutTransformation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:background="@drawable/button_background"
+                android:foreground="?attr/selectableItemBackground"
+                android:paddingLeft="15dp"
+                android:text="22. Vertical Shut Transformation"
+                android:textAlignment="viewStart"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
                 android:textSize="20dp" />
         </LinearLayout>
 
@@ -286,12 +335,12 @@
 
     <android.support.design.widget.FloatingActionButton
         android:id="@+id/fab"
-        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
+        android:layout_width="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_marginBottom="15dp"
         android:layout_marginRight="15dp"
+        android:layout_alignParentBottom="true"
         android:src="@drawable/github_circle"
         app:backgroundTint="@color/colorPrimaryDark"
         app:fabSize="normal" />

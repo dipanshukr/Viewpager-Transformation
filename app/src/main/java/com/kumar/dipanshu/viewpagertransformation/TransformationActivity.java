@@ -32,8 +32,10 @@ import com.kumar.dipanshu.viewpagertransformation.Transformations.HingeTransform
 import com.kumar.dipanshu.viewpagertransformation.Transformations.HorizontalFlipTransformation;
 import com.kumar.dipanshu.viewpagertransformation.Transformations.PopTransformation;
 import com.kumar.dipanshu.viewpagertransformation.Transformations.SimpleTransformation;
+import com.kumar.dipanshu.viewpagertransformation.Transformations.SpinnerTransformation;
 import com.kumar.dipanshu.viewpagertransformation.Transformations.TossTransformation;
 import com.kumar.dipanshu.viewpagertransformation.Transformations.VerticalFlipTransformation;
+import com.kumar.dipanshu.viewpagertransformation.Transformations.VerticalShutTransformation;
 import com.kumar.dipanshu.viewpagertransformation.Transformations.ZoomOutTransformation;
 
 public class TransformationActivity extends AppCompatActivity {
@@ -74,6 +76,8 @@ public class TransformationActivity extends AppCompatActivity {
         GateTransformation gateTransformation = new GateTransformation();
         TossTransformation tossTransformation = new TossTransformation();
         FanTransformation fanTransformation = new FanTransformation();
+        SpinnerTransformation spinnerTransformation = new SpinnerTransformation();
+        VerticalShutTransformation verticalShutTransformation = new VerticalShutTransformation();
 
 
         intent = getIntent();
@@ -140,6 +144,12 @@ public class TransformationActivity extends AppCompatActivity {
                 break;
             case Constant.FAN_TRANSFORMATION:
                 viewPager.setPageTransformer(true, fanTransformation);
+                break;
+            case Constant.SPINNER_TRANSFORMATION:
+                viewPager.setPageTransformer(true,spinnerTransformation);
+                break;
+            case Constant.VERTICAL_SHUT_TRANSFORMATION:
+                viewPager.setPageTransformer(true,verticalShutTransformation);
                 break;
         }
     }

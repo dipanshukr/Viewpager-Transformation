@@ -24,5 +24,6 @@ public class Constant {
     public final static String GATE_TRANSFORMATION = "gate transformation";
     public final static String TOSS_TRANSFORMATION = "toss transformation";
     public final static String FAN_TRANSFORMATION = "fan transformation";
-
+    public final static String SPINNER_TRANSFORMATION = "spinner transformation";
+    public final static String VERTICAL_SHUT_TRANSFORMATION = "vertical_shut_transformation";
 }
