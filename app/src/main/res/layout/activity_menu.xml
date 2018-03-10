@@ -14,7 +14,8 @@
         android:paddingLeft="15dp"
         android:paddingRight="15dp"
         android:paddingBottom="5dp"
-        android:paddingTop="10dp"
+        android:paddingTop="5dp"
+        android:layout_above="@+id/bannerAd"
         android:scrollbars="none">
 
         <LinearLayout
@@ -335,14 +336,23 @@
 
     <android.support.design.widget.FloatingActionButton
         android:id="@+id/fab"
-        android:layout_height="wrap_content"
         android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bannerAd"
         android:layout_alignParentEnd="true"
         android:layout_marginBottom="15dp"
         android:layout_marginRight="15dp"
-        android:layout_alignParentBottom="true"
         android:src="@drawable/github_circle"
         app:backgroundTint="@color/colorPrimaryDark"
         app:fabSize="normal" />
+
+    <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/bannerAd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/banner_ad_unit_ID" />
 
 </RelativeLayout>

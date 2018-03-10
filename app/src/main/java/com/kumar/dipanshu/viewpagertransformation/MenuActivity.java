@@ -7,7 +7,12 @@ import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 
+import com.google.android.gms.ads.AdListener;
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
+import com.google.android.gms.ads.MobileAds;
 
 public class MenuActivity extends AppCompatActivity implements View.OnClickListener {
 
@@ -18,14 +23,15 @@ public class MenuActivity extends AppCompatActivity implements View.OnClickListe
     Intent intent;
     FloatingActionButton floatingActionButton;
 
-
+    AdView adView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu);
+        MobileAds.initialize(this,getString(R.string.app_ID));
 
-
+        showBannerAds();
 
         floatingActionButton = (FloatingActionButton) findViewById(R.id.fab);
         floatingActionButton.setOnClickListener(new View.OnClickListener() {
@@ -44,6 +50,26 @@ public class MenuActivity extends AppCompatActivity implements View.OnClickListe
         //method where listner is attached to ezch buttons
         attachListner();
 
+    }
+
+    private void showBannerAds() {
+        adView = (AdView)findViewById(R.id.bannerAd);
+        AdRequest adRequest = new AdRequest.Builder().build();
+        adView.loadAd(adRequest);
+
+        adView.setAdListener(new AdListener(){
+            @Override
+            public void onAdFailedToLoad(int i) {
+                super.onAdFailedToLoad(i);
+                Toast.makeText(MenuActivity.this, "Please turn ON your INTERNET connection & show some support to us.", Toast.LENGTH_SHORT).show();
+            }
+
+            @Override
+            public void onAdClicked() {
+                super.onAdClicked();
+                Toast.makeText(MenuActivity.this, "Thanks for supporting us.", Toast.LENGTH_SHORT).show();
+            }
+        });
     }
 
 
