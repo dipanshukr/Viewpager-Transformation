@@ -11,14 +11,14 @@ By implementing this you can achieve these amazing **transformations** for **Vie
 
 You can download the latest sample APK from Google Play store:
 
-<a href="">
+<a href="https://play.google.com/store/apps/details?id=com.kumar.dipanshu.viewpagertransformation">
   <img alt="Android app on Google Play" src="https://developer.android.com/images/brand/en_app_rgb_wo_45.png" />
 </a>
 
 ## List of Transformations
 
 Here is the list of transformations which you can check by clicking them :
-* Simple Transformation
+* [Simple Transformation](https://github.com/dipanshukr/ViewPagerTransformations/wiki/Simple-Transformation)
 * [Depth Transformation](https://github.com/dipanshukr/ViewPagerTransformations/wiki/Depth-Transformation)
 * [Zoom Out Transformation](https://github.com/dipanshukr/ViewPagerTransformations/wiki/Zoom-Out-Transformation)
 * [Clock Spin Transformation](https://github.com/dipanshukr/ViewPagerTransformations/wiki/Clock-Spin-Transformation)
@@ -38,5 +38,5 @@ Here is the list of transformations which you can check by clicking them :
 * [Gate Transformation](https://github.com/dipanshukr/ViewPagerTransformations/wiki/Gate-Transformation)
 * [Toss Transformation](https://github.com/dipanshukr/ViewPagerTransformations/wiki/Toss-Transformation)
 * [Fan Transformation](https://github.com/dipanshukr/ViewPagerTransformations/wiki/Fan-Transformation)
-* [Spinner Transformation]
-* [Vertical Shut Transformation]
+* [Spinner Transformation](https://github.com/dipanshukr/ViewPagerTransformations/wiki/Spinner-Transformation)
+* [Vertical Shut Transformation](https://github.com/dipanshukr/ViewPagerTransformations/wiki/Vertical-Shut-Transformation)
