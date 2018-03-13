@@ -12,6 +12,7 @@ import android.widget.Toast;
 import com.google.android.gms.ads.AdListener;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
+import com.google.android.gms.ads.InterstitialAd;
 import com.google.android.gms.ads.MobileAds;
 
 public class MenuActivity extends AppCompatActivity implements View.OnClickListener {
@@ -24,6 +25,9 @@ public class MenuActivity extends AppCompatActivity implements View.OnClickListe
     FloatingActionButton floatingActionButton;
 
     AdView adView;
+    InterstitialAd interstitialAd;
+
+    private static int count = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,6 +36,8 @@ public class MenuActivity extends AppCompatActivity implements View.OnClickListe
         MobileAds.initialize(this,getString(R.string.app_ID));
 
         showBannerAds();
+        loadInterstitialAd();
+
 
         floatingActionButton = (FloatingActionButton) findViewById(R.id.fab);
         floatingActionButton.setOnClickListener(new View.OnClickListener() {
@@ -52,6 +58,28 @@ public class MenuActivity extends AppCompatActivity implements View.OnClickListe
 
     }
 
+    private void loadInterstitialAd() {
+        interstitialAd = new InterstitialAd(this);
+        interstitialAd.setAdUnitId(getString(R.string.interstitial_ad_unit_id));
+        interstitialAd.loadAd(new AdRequest.Builder().build());
+        interstitialAd.setAdListener(new AdListener() {
+            @Override
+            public void onAdClosed() {
+                super.onAdClosed();
+                interstitialAd.loadAd(new AdRequest.Builder().build());
+            }
+        });
+    }
+
+    private void showInterstitialAd() {
+        if (interstitialAd.isLoaded()) {
+            interstitialAd.show();
+        } else {
+            Toast.makeText(MenuActivity.this, "Please turn ON your INTERNET connection & show some support to us.", Toast.LENGTH_SHORT).show();
+        }
+
+    }
+
     private void showBannerAds() {
         adView = (AdView)findViewById(R.id.bannerAd);
         AdRequest adRequest = new AdRequest.Builder().build();
@@ -63,15 +91,8 @@ public class MenuActivity extends AppCompatActivity implements View.OnClickListe
                 super.onAdFailedToLoad(i);
                 Toast.makeText(MenuActivity.this, "Please turn ON your INTERNET connection & show some support to us.", Toast.LENGTH_SHORT).show();
             }
-
-            @Override
-            public void onAdClicked() {
-                super.onAdClicked();
-                Toast.makeText(MenuActivity.this, "Thanks for supporting us.", Toast.LENGTH_SHORT).show();
-            }
         });
     }
-
 
     private void intialiseButtons() {
         simple = (Button) findViewById(R.id.simpleTransformation);
@@ -237,6 +258,17 @@ public class MenuActivity extends AppCompatActivity implements View.OnClickListe
                 intent.putExtra(Constant.TRANSFORMATION, Constant.VERTICAL_SHUT_TRANSFORMATION);
                 startActivity(intent);
                 break;
+        }
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        count++;
+
+        if (count % 4 == 0) {
+            showInterstitialAd();
+            count = 0;
         }
     }
 
