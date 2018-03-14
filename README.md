@@ -20,7 +20,7 @@ You can download the latest sample APK from Google Play store:
 Here is the list of transformations which you can check by clicking them :
 * [Simple Transformation](https://github.com/dipanshukr/ViewPagerTransformations/wiki/Simple-Transformation)
 
-<img src="Extras/Simple.gif" width="55" height="100"/>
+    <img src="Extras/Simple.gif" width="55" height="100"/>
 
 * [Depth Transformation](https://github.com/dipanshukr/ViewPagerTransformations/wiki/Depth-Transformation)
 
