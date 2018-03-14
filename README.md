@@ -13,6 +13,12 @@ You can download the latest sample APK from Google Play store:
   <img alt="Android app on Google Play" src="https://developer.android.com/images/brand/en_app_rgb_wo_45.png" />
 </a>
 
+You can also see full video clip of all the **TRANSFORMATIONS** on youtube :
+
+<a href="https://youtu.be/dfH6dEJWecc">
+  <img src"Extras/youtube.png" width="300" height="100"/>
+</a>
+
 ## List of Transformations
 
 Here is the list of transformations which you can check by clicking them :
