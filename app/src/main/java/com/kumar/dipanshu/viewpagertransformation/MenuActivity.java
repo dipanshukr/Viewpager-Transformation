@@ -25,20 +25,10 @@ public class MenuActivity extends AppCompatActivity implements View.OnClickListe
     Intent intent;
     FloatingActionButton floatingActionButton;
 
-    AdView adView;
-    InterstitialAd interstitialAd;
-
-    private static int count = 0;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu);
-        MobileAds.initialize(this,getString(R.string.app_ID));
-
-        showBannerAds();
-        loadInterstitialAd();
-
 
         floatingActionButton = (FloatingActionButton) findViewById(R.id.fab);
         floatingActionButton.setOnClickListener(new View.OnClickListener() {
@@ -57,39 +47,6 @@ public class MenuActivity extends AppCompatActivity implements View.OnClickListe
         //method where listner is attached to ezch buttons
         attachListner();
 
-    }
-
-    private void loadInterstitialAd() {
-        interstitialAd = new InterstitialAd(this);
-        interstitialAd.setAdUnitId(getString(R.string.interstitial_ad_unit_id));
-        interstitialAd.loadAd(new AdRequest.Builder().build());
-        interstitialAd.setAdListener(new AdListener() {
-            @Override
-            public void onAdClosed() {
-                super.onAdClosed();
-                interstitialAd.loadAd(new AdRequest.Builder().build());
-            }
-        });
-    }
-
-    private void showInterstitialAd() {
-        if (interstitialAd.isLoaded()) {
-            interstitialAd.show();
-        }
-    }
-
-    private void showBannerAds() {
-        adView = (AdView)findViewById(R.id.bannerAd);
-        AdRequest adRequest = new AdRequest.Builder().build();
-        adView.loadAd(adRequest);
-
-        adView.setAdListener(new AdListener(){
-            @Override
-            public void onAdFailedToLoad(int i) {
-                super.onAdFailedToLoad(i);
-                Toast.makeText(MenuActivity.this, "Please turn ON your INTERNET connection & show some support to us.", Toast.LENGTH_SHORT).show();
-            }
-        });
     }
 
     private void intialiseButtons() {
@@ -268,17 +225,6 @@ public class MenuActivity extends AppCompatActivity implements View.OnClickListe
                 intent.putExtra(Constant.TRANSFORMATION, Constant.VERTICAL_SHUT_TRANSFORMATION);
                 startActivity(intent);
                 break;
-        }
-    }
-
-    @Override
-    protected void onResume() {
-        super.onResume();
-        count++;
-
-        if (count % 4 == 0) {
-            showInterstitialAd();
-            count = 0;
         }
     }
 
