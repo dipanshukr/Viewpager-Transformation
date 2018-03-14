@@ -7,13 +7,15 @@ In the idle state , 0 being the position of the page we are currenting viewing.
 
 By implementing this you can achieve these amazing **transformations** for **Viewpager** by your own and also you can create your own transformations and name them as you wish.
 
-<img src="Extras/Depth.gif" width="145" height="250"/><img src="Extras/Vertical Flip.gif" width="145" height="250"/><img src="Extras/Hinge.gif" width="145" height="250"/><img src="Extras/Gate.gif" width="145" height="250"/><img src="Extras/Cube Out Depth.gif" width="145" height="250"/><img src="Extras/Cube Out.gif" width="145" height="250"/>
+<img src="Extras/Depth.gif" /> <img src="Extras/Cube Out Depth.gif" /> <img src="Extras/Fade Out.gif" />
 
 You can download the latest sample APK from Google Play store:
 
 <a href="https://play.google.com/store/apps/details?id=com.kumar.dipanshu.viewpagertransformation">
   <img alt="Android app on Google Play" src="https://developer.android.com/images/brand/en_app_rgb_wo_45.png" />
 </a>
+
+You can also see full video clip of all the **transformations** on <a href="https://youtu.be/dfH6dEJWecc">**YOUTUBE**</a>.
 
 ## List of Transformations
 
