@@ -74,10 +74,7 @@ public class MenuActivity extends AppCompatActivity implements View.OnClickListe
     private void showInterstitialAd() {
         if (interstitialAd.isLoaded()) {
             interstitialAd.show();
-        } else {
-            Toast.makeText(MenuActivity.this, "Please turn ON your INTERNET connection & show some support to us.", Toast.LENGTH_SHORT).show();
         }
-
     }
 
     private void showBannerAds() {
