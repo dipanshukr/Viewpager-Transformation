@@ -7,15 +7,63 @@
     android:fillViewport="true"
     tools:context="com.kumar.dipanshu.viewpagertransformation.MenuActivity">
 
+    <Button
+        android:id="@+id/slowTransformation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="2dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/button"
+        android:foreground="?attr/selectableItemBackground"
+        android:paddingLeft="15dp"
+        android:text="Slow Animation"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/circularViewpagerTransformation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/slowTransformation"
+        android:layout_margin="2dp"
+        android:background="@drawable/button"
+        android:foreground="?attr/selectableItemBackground"
+        android:paddingLeft="15dp"
+        android:text="Circular Viewpager"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/listTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/circularViewpagerTransformation"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:text="List of transformations"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_above="@+id/bannerAd"
+        android:layout_below="@+id/listTextView"
         android:fillViewport="true"
+        android:paddingBottom="5dp"
         android:paddingLeft="15dp"
         android:paddingRight="15dp"
-        android:paddingBottom="5dp"
         android:paddingTop="5dp"
-        android:layout_above="@+id/bannerAd"
         android:scrollbars="none">
 
         <LinearLayout
@@ -23,46 +71,6 @@
             android:layout_height="match_parent"
             android:orientation="vertical">
 
-            <Button
-                android:id="@+id/slowTransformation"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="2dp"
-                android:background="@drawable/button_background"
-                android:foreground="?attr/selectableItemBackground"
-                android:paddingLeft="15dp"
-                android:text="Slow Animation"
-                android:textAlignment="center"
-                android:textAllCaps="false"
-                android:textColor="@android:color/white"
-                android:textSize="20dp"
-                android:textStyle="bold" />
-
-            <Button
-                android:id="@+id/circularViewpagerTransformation"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="2dp"
-                android:background="@drawable/button_background"
-                android:foreground="?attr/selectableItemBackground"
-                android:paddingLeft="15dp"
-                android:text="Circular Viewpager"
-                android:textAlignment="center"
-                android:textAllCaps="false"
-                android:textColor="@android:color/white"
-                android:textSize="20dp"
-                android:textStyle="bold" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="5dp"
-                android:layout_marginTop="5dp"
-                android:text="List of transformations"
-                android:textAlignment="center"
-                android:textColor="@android:color/black"
-                android:textSize="20dp"
-                android:textStyle="bold" />
 
             <Button
                 android:id="@+id/simpleTransformation"
