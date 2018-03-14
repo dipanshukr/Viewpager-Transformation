@@ -21,6 +21,8 @@
         <activity
             android:name=".TransformationActivity"
             android:theme="@style/TransformationTheme" />
+        <activity android:name=".CircularViewPager"
+            android:theme="@style/TransformationTheme"/>
     </application>
 
 </manifest>

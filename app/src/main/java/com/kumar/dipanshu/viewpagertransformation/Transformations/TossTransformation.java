@@ -1,10 +1,7 @@
 package com.kumar.dipanshu.viewpagertransformation.Transformations;
 
 import android.support.v4.view.ViewPager;
-import android.util.Log;
 import android.view.View;
-
-import java.io.PipedOutputStream;
 
 public class TossTransformation implements ViewPager.PageTransformer {
     @Override

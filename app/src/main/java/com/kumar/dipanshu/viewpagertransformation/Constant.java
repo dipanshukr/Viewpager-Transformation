@@ -4,6 +4,7 @@ public class Constant {
 
     public final static String TRANSFORMATION = "transformation";
 
+    public final static String SLOW_TRANSFORMATION = "slow transformation";
     public final static String SIMPLE_TRANSFORMATION = "simple transformation";
     public final static String DEPTH_TRANSFORMATION = "depth transformation";
     public final static String ZOOM_OUT_TRANSFORMATION = "zoom transformation";

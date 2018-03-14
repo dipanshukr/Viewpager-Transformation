@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
+import android.widget.ImageView;
 
 import com.kumar.dipanshu.viewpagertransformation.Fragments.EighthFragment;
 import com.kumar.dipanshu.viewpagertransformation.Fragments.FifthFragment;
@@ -32,11 +33,13 @@ import com.kumar.dipanshu.viewpagertransformation.Transformations.HingeTransform
 import com.kumar.dipanshu.viewpagertransformation.Transformations.HorizontalFlipTransformation;
 import com.kumar.dipanshu.viewpagertransformation.Transformations.PopTransformation;
 import com.kumar.dipanshu.viewpagertransformation.Transformations.SimpleTransformation;
+import com.kumar.dipanshu.viewpagertransformation.Transformations.SlowTransformation;
 import com.kumar.dipanshu.viewpagertransformation.Transformations.SpinnerTransformation;
 import com.kumar.dipanshu.viewpagertransformation.Transformations.TossTransformation;
 import com.kumar.dipanshu.viewpagertransformation.Transformations.VerticalFlipTransformation;
 import com.kumar.dipanshu.viewpagertransformation.Transformations.VerticalShutTransformation;
 import com.kumar.dipanshu.viewpagertransformation.Transformations.ZoomOutTransformation;
+import com.squareup.picasso.Picasso;
 
 public class TransformationActivity extends AppCompatActivity {
 
@@ -51,11 +54,11 @@ public class TransformationActivity extends AppCompatActivity {
 
         viewPager = (ViewPager) findViewById(R.id.viewPager);
 
-
         pagerAdapter = new MyPagerAdapter(getSupportFragmentManager());
         addingFragmentsTOpagerAdapter();
         viewPager.setAdapter(pagerAdapter);
 
+        SlowTransformation slowTransformation = new SlowTransformation();
         SimpleTransformation simpleTransformation = new SimpleTransformation();
         DepthTransformation depthTransformation = new DepthTransformation();
         ZoomOutTransformation zoomOutTransformation = new ZoomOutTransformation();
@@ -85,6 +88,9 @@ public class TransformationActivity extends AppCompatActivity {
 
 
         switch (transformation) {
+            case Constant.SLOW_TRANSFORMATION:
+                viewPager.setPageTransformer(true,slowTransformation);
+                break;
             case Constant.SIMPLE_TRANSFORMATION:
                 viewPager.setPageTransformer(true, simpleTransformation);
                 break;

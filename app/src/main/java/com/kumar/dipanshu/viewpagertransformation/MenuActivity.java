@@ -19,7 +19,8 @@ public class MenuActivity extends AppCompatActivity implements View.OnClickListe
 
 
     Button simple, depth, zoomOut, clock_Spin, antiClock_Spin, fidgetSpinner, vertical_Flip, horizontal_Flip, pop, fadeOut,
-            cubeOut, cubeIn, cubeOutScale, cubeInScale, cubeOutDepth, cubeInDepth, hinge, gate, toss, fan, spinner, vertical_Shut;
+            cubeOut, cubeIn, cubeOutScale, cubeInScale, cubeOutDepth, cubeInDepth, hinge, gate, toss, fan, spinner, vertical_Shut,
+            slow,circular;
 
     Intent intent;
     FloatingActionButton floatingActionButton;
@@ -92,6 +93,8 @@ public class MenuActivity extends AppCompatActivity implements View.OnClickListe
     }
 
     private void intialiseButtons() {
+        slow = (Button)findViewById(R.id.slowTransformation);
+        circular = (Button) findViewById(R.id.circularViewpagerTransformation);
         simple = (Button) findViewById(R.id.simpleTransformation);
         depth = (Button) findViewById(R.id.depthTransformation);
         zoomOut = (Button) findViewById(R.id.zoomOutTransformation);
@@ -118,6 +121,8 @@ public class MenuActivity extends AppCompatActivity implements View.OnClickListe
     }
 
     private void attachListner() {
+        slow.setOnClickListener(this);
+        circular.setOnClickListener(this);
         simple.setOnClickListener(this);
         depth.setOnClickListener(this);
         zoomOut.setOnClickListener(this);
@@ -145,6 +150,14 @@ public class MenuActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     public void onClick(View v) {
         switch (v.getId()) {
+            case R.id.slowTransformation:
+                intent = new Intent(MenuActivity.this, TransformationActivity.class);
+                intent.putExtra(Constant.TRANSFORMATION, Constant.SLOW_TRANSFORMATION);
+                startActivity(intent);
+                break;
+            case R.id.circularViewpagerTransformation:
+                startActivity(new Intent(MenuActivity.this, CircularViewPager.class));
+                break;
             case R.id.simpleTransformation:
                 intent = new Intent(MenuActivity.this, TransformationActivity.class);
                 intent.putExtra(Constant.TRANSFORMATION, Constant.SIMPLE_TRANSFORMATION);

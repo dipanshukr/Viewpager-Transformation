@@ -12,9 +12,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="2dp"
-        android:layout_marginLeft="2dp"
-        android:layout_marginRight="2dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="5dp"
         android:background="@drawable/button"
         android:foreground="?attr/selectableItemBackground"
         android:paddingLeft="15dp"
@@ -22,7 +22,7 @@
         android:textAlignment="center"
         android:textAllCaps="false"
         android:textColor="@android:color/white"
-        android:textSize="20dp"
+        android:textSize="18dp"
         android:textStyle="bold" />
 
     <Button
@@ -30,7 +30,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/slowTransformation"
-        android:layout_margin="2dp"
+        android:layout_marginBottom="2dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="2dp"
         android:background="@drawable/button"
         android:foreground="?attr/selectableItemBackground"
         android:paddingLeft="15dp"
@@ -38,7 +41,7 @@
         android:textAlignment="center"
         android:textAllCaps="false"
         android:textColor="@android:color/white"
-        android:textSize="20dp"
+        android:textSize="18dp"
         android:textStyle="bold" />
 
     <TextView
@@ -51,7 +54,7 @@
         android:text="List of transformations"
         android:textAlignment="center"
         android:textColor="@android:color/black"
-        android:textSize="20dp"
+        android:textSize="18dp"
         android:textStyle="bold" />
 
     <ScrollView
@@ -59,14 +62,13 @@
         android:layout_height="match_parent"
         android:layout_above="@+id/bannerAd"
         android:layout_below="@+id/listTextView"
-        android:fillViewport="true"
-        android:paddingBottom="5dp"
-        android:paddingLeft="15dp"
-        android:paddingRight="15dp"
-        android:paddingTop="5dp"
-        android:scrollbars="none">
+        android:fillViewport="true">
 
         <LinearLayout
+            android:paddingBottom="10dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingTop="10dp"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical">
@@ -84,7 +86,7 @@
                 android:textAllCaps="false"
                 android:textColor="@android:color/white"
                 android:foreground="?attr/selectableItemBackground"
-                android:textSize="20dp" />
+                android:textSize="18dp" />
 
             <Button
                 android:id="@+id/depthTransformation"
@@ -98,7 +100,7 @@
                 android:textAllCaps="false"
                 android:textColor="@android:color/white"
                 android:foreground="?attr/selectableItemBackground"
-                android:textSize="20dp" />
+                android:textSize="18dp" />
 
             <Button
                 android:id="@+id/zoomOutTransformation"
@@ -112,7 +114,7 @@
                 android:textAllCaps="false"
                 android:textColor="@android:color/white"
                 android:foreground="?attr/selectableItemBackground"
-                android:textSize="20dp" />
+                android:textSize="18dp" />
 
             <Button
                 android:id="@+id/clockSpinTransformation"
@@ -126,7 +128,7 @@
                 android:textAllCaps="false"
                 android:textColor="@android:color/white"
                 android:foreground="?attr/selectableItemBackground"
-                android:textSize="20dp" />
+                android:textSize="18dp" />
 
             <Button
                 android:id="@+id/antiClockSpinTransformation"
@@ -140,7 +142,7 @@
                 android:textAllCaps="false"
                 android:textColor="@android:color/white"
                 android:foreground="?attr/selectableItemBackground"
-                android:textSize="20dp" />
+                android:textSize="18dp" />
 
             <Button
                 android:id="@+id/fidgetSpinTransformation"
@@ -154,7 +156,7 @@
                 android:textAllCaps="false"
                 android:textColor="@android:color/white"
                 android:foreground="?attr/selectableItemBackground"
-                android:textSize="20dp" />
+                android:textSize="18dp" />
 
             <Button
                 android:id="@+id/verticalFlipTransformation"
@@ -168,7 +170,7 @@
                 android:textAllCaps="false"
                 android:textColor="@android:color/white"
                 android:foreground="?attr/selectableItemBackground"
-                android:textSize="20dp" />
+                android:textSize="18dp" />
 
             <Button
                 android:id="@+id/horizontalFlipTransformation"
@@ -182,7 +184,7 @@
                 android:textAllCaps="false"
                 android:textColor="@android:color/white"
                 android:foreground="?attr/selectableItemBackground"
-                android:textSize="20dp" />
+                android:textSize="18dp" />
 
             <Button
                 android:id="@+id/popTransformation"
@@ -196,7 +198,7 @@
                 android:textAllCaps="false"
                 android:textColor="@android:color/white"
                 android:foreground="?attr/selectableItemBackground"
-                android:textSize="20dp" />
+                android:textSize="18dp" />
 
             <Button
                 android:id="@+id/fadeOutTransformation"
@@ -210,7 +212,7 @@
                 android:textAllCaps="false"
                 android:textColor="@android:color/white"
                 android:foreground="?attr/selectableItemBackground"
-                android:textSize="20dp" />
+                android:textSize="18dp" />
 
             <Button
                 android:id="@+id/cubeOutTransformation"
@@ -224,7 +226,7 @@
                 android:textAllCaps="false"
                 android:textColor="@android:color/white"
                 android:foreground="?attr/selectableItemBackground"
-                android:textSize="20dp" />
+                android:textSize="18dp" />
 
             <Button
                 android:id="@+id/cubeInTransformation"
@@ -238,7 +240,7 @@
                 android:textAllCaps="false"
                 android:textColor="@android:color/white"
                 android:foreground="?attr/selectableItemBackground"
-                android:textSize="20dp" />
+                android:textSize="18dp" />
 
             <Button
                 android:id="@+id/cubeOutScalingTransformation"
@@ -252,7 +254,7 @@
                 android:textAllCaps="false"
                 android:textColor="@android:color/white"
                 android:foreground="?attr/selectableItemBackground"
-                android:textSize="20dp" />
+                android:textSize="18dp" />
 
             <Button
                 android:id="@+id/cubeInScalingTransformation"
@@ -266,7 +268,7 @@
                 android:textAllCaps="false"
                 android:textColor="@android:color/white"
                 android:foreground="?attr/selectableItemBackground"
-                android:textSize="20dp" />
+                android:textSize="18dp" />
 
             <Button
                 android:id="@+id/cubeOutDepthTransformation"
@@ -280,7 +282,7 @@
                 android:textAllCaps="false"
                 android:textColor="@android:color/white"
                 android:foreground="?attr/selectableItemBackground"
-                android:textSize="20dp" />
+                android:textSize="18dp" />
 
             <Button
                 android:id="@+id/cubeInDepthTransformation"
@@ -294,7 +296,7 @@
                 android:textAllCaps="false"
                 android:textColor="@android:color/white"
                 android:foreground="?attr/selectableItemBackground"
-                android:textSize="20dp" />
+                android:textSize="18dp" />
 
             <Button
                 android:id="@+id/hingeTransformation"
@@ -308,7 +310,7 @@
                 android:textAllCaps="false"
                 android:textColor="@android:color/white"
                 android:foreground="?attr/selectableItemBackground"
-                android:textSize="20dp" />
+                android:textSize="18dp" />
 
             <Button
                 android:id="@+id/gateTransformation"
@@ -322,7 +324,7 @@
                 android:textAllCaps="false"
                 android:textColor="@android:color/white"
                 android:foreground="?attr/selectableItemBackground"
-                android:textSize="20dp" />
+                android:textSize="18dp" />
 
             <Button
                 android:id="@+id/tossTransformation"
@@ -336,7 +338,7 @@
                 android:textAllCaps="false"
                 android:textColor="@android:color/white"
                 android:foreground="?attr/selectableItemBackground"
-                android:textSize="20dp" />
+                android:textSize="18dp" />
 
             <Button
                 android:id="@+id/fanTransformation"
@@ -350,7 +352,7 @@
                 android:textAllCaps="false"
                 android:textColor="@android:color/white"
                 android:foreground="?attr/selectableItemBackground"
-                android:textSize="20dp" />
+                android:textSize="18dp" />
 
             <Button
                 android:id="@+id/spinnerTransformation"
@@ -364,7 +366,7 @@
                 android:textAlignment="viewStart"
                 android:textAllCaps="false"
                 android:textColor="@android:color/white"
-                android:textSize="20dp" />
+                android:textSize="18dp" />
 
             <Button
                 android:id="@+id/verticalShutTransformation"
@@ -378,7 +380,7 @@
                 android:textAlignment="viewStart"
                 android:textAllCaps="false"
                 android:textColor="@android:color/white"
-                android:textSize="20dp" />
+                android:textSize="18dp" />
         </LinearLayout>
 
     </ScrollView>
