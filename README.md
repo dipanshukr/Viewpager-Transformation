@@ -19,9 +19,21 @@ You can download the latest sample APK from Google Play store:
 
 Here is the list of transformations which you can check by clicking them :
 * [Simple Transformation](https://github.com/dipanshukr/ViewPagerTransformations/wiki/Simple-Transformation)
+
+<img src="Extras/Simple.gif" width="55" height="100"/>
+
 * [Depth Transformation](https://github.com/dipanshukr/ViewPagerTransformations/wiki/Depth-Transformation)
+
+<img src="Extras/Depth.gif" width="55" height="100"/>
+
 * [Zoom Out Transformation](https://github.com/dipanshukr/ViewPagerTransformations/wiki/Zoom-Out-Transformation)
+
+<img src="Extras/Zoom Out.gif" width="55" height="100"/>
+
 * [Clock Spin Transformation](https://github.com/dipanshukr/ViewPagerTransformations/wiki/Clock-Spin-Transformation)
+
+<img src="Extras/Clock Spin.gif" width="55" height="100"/>
+
 * [AntiClock Spin Transformation](https://github.com/dipanshukr/ViewPagerTransformations/wiki/AntiClock-Spin-Transformation)
 * [Fidget Spin Transformation](https://github.com/dipanshukr/ViewPagerTransformations/wiki/Fidget-Spin-Transformation)
 * [Vertical Flip Transformation](https://github.com/dipanshukr/ViewPagerTransformations/wiki/Vertical-Flip-Transformation)
