@@ -1,8 +1,5 @@
 <resources>
     <string name="app_name">Viewpager Animation</string>
-    <string name="app_ID">ca-app-pub-3623169332425111~9040601836</string>
-    <string name="banner_ad_unit_ID">ca-app-pub-3623169332425111/9465830011</string>
-    <string name="interstitial_ad_unit_id">ca-app-pub-3623169332425111/4046848342</string>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
