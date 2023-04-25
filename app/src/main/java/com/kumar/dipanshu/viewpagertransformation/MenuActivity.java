@@ -3,17 +3,11 @@ package com.kumar.dipanshu.viewpagertransformation;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.v7.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
-import android.widget.Toast;
 
-import com.google.android.gms.ads.AdListener;
-import com.google.android.gms.ads.AdRequest;
-import com.google.android.gms.ads.AdView;
-import com.google.android.gms.ads.InterstitialAd;
-import com.google.android.gms.ads.MobileAds;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 public class MenuActivity extends AppCompatActivity implements View.OnClickListener {
 
@@ -30,15 +24,12 @@ public class MenuActivity extends AppCompatActivity implements View.OnClickListe
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu);
 
-        floatingActionButton = (FloatingActionButton) findViewById(R.id.fab);
-        floatingActionButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                String url = "https://github.com/dipanshukr/ViewPagerTransformations";
-                Intent intentGithub = new Intent(Intent.ACTION_VIEW);
-                intentGithub.setData(Uri.parse(url));
-                startActivity(intentGithub);
-            }
+        floatingActionButton = findViewById(R.id.fab);
+        floatingActionButton.setOnClickListener(v -> {
+            String url = "https://github.com/dipanshukr/ViewPagerTransformations";
+            Intent intentGithub = new Intent(Intent.ACTION_VIEW);
+            intentGithub.setData(Uri.parse(url));
+            startActivity(intentGithub);
         });
 
         //method where we initialise buttons
@@ -50,30 +41,30 @@ public class MenuActivity extends AppCompatActivity implements View.OnClickListe
     }
 
     private void intialiseButtons() {
-        slow = (Button)findViewById(R.id.slowTransformation);
-        circular = (Button) findViewById(R.id.circularViewpagerTransformation);
-        simple = (Button) findViewById(R.id.simpleTransformation);
-        depth = (Button) findViewById(R.id.depthTransformation);
-        zoomOut = (Button) findViewById(R.id.zoomOutTransformation);
-        clock_Spin = (Button) findViewById(R.id.clockSpinTransformation);
-        antiClock_Spin = (Button) findViewById(R.id.antiClockSpinTransformation);
-        fidgetSpinner = (Button) findViewById(R.id.fidgetSpinTransformation);
-        vertical_Flip = (Button) findViewById(R.id.verticalFlipTransformation);
-        horizontal_Flip = (Button) findViewById(R.id.horizontalFlipTransformation);
-        pop = (Button) findViewById(R.id.popTransformation);
-        fadeOut = (Button) findViewById(R.id.fadeOutTransformation);
-        cubeOut = (Button) findViewById(R.id.cubeOutTransformation);
-        cubeIn = (Button) findViewById(R.id.cubeInTransformation);
-        cubeOutScale = (Button) findViewById(R.id.cubeOutScalingTransformation);
-        cubeInScale = (Button) findViewById(R.id.cubeInScalingTransformation);
-        cubeOutDepth = (Button) findViewById(R.id.cubeOutDepthTransformation);
-        cubeInDepth = (Button) findViewById(R.id.cubeInDepthTransformation);
-        hinge = (Button) findViewById(R.id.hingeTransformation);
-        gate = (Button) findViewById(R.id.gateTransformation);
-        toss = (Button) findViewById(R.id.tossTransformation);
-        fan = (Button) findViewById(R.id.fanTransformation);
-        spinner = (Button) findViewById(R.id.spinnerTransformation);
-        vertical_Shut = (Button) findViewById(R.id.verticalShutTransformation);
+        slow = findViewById(R.id.slowTransformation);
+        circular = findViewById(R.id.circularViewpagerTransformation);
+        simple = findViewById(R.id.simpleTransformation);
+        depth = findViewById(R.id.depthTransformation);
+        zoomOut = findViewById(R.id.zoomOutTransformation);
+        clock_Spin = findViewById(R.id.clockSpinTransformation);
+        antiClock_Spin = findViewById(R.id.antiClockSpinTransformation);
+        fidgetSpinner = findViewById(R.id.fidgetSpinTransformation);
+        vertical_Flip = findViewById(R.id.verticalFlipTransformation);
+        horizontal_Flip = findViewById(R.id.horizontalFlipTransformation);
+        pop = findViewById(R.id.popTransformation);
+        fadeOut = findViewById(R.id.fadeOutTransformation);
+        cubeOut = findViewById(R.id.cubeOutTransformation);
+        cubeIn = findViewById(R.id.cubeInTransformation);
+        cubeOutScale = findViewById(R.id.cubeOutScalingTransformation);
+        cubeInScale = findViewById(R.id.cubeInScalingTransformation);
+        cubeOutDepth = findViewById(R.id.cubeOutDepthTransformation);
+        cubeInDepth = findViewById(R.id.cubeInDepthTransformation);
+        hinge = findViewById(R.id.hingeTransformation);
+        gate = findViewById(R.id.gateTransformation);
+        toss = findViewById(R.id.tossTransformation);
+        fan = findViewById(R.id.fanTransformation);
+        spinner = findViewById(R.id.spinnerTransformation);
+        vertical_Shut = findViewById(R.id.verticalShutTransformation);
 
     }
 

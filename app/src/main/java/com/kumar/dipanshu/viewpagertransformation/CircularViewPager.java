@@ -2,19 +2,11 @@ package com.kumar.dipanshu.viewpagertransformation;
 
 import android.os.Bundle;
 import android.os.Handler;
-import android.support.v4.view.ViewPager;
-import android.support.v7.app.AppCompatActivity;
 
-import com.kumar.dipanshu.viewpagertransformation.Fragments.EighthFragment;
-import com.kumar.dipanshu.viewpagertransformation.Fragments.FifthFragment;
-import com.kumar.dipanshu.viewpagertransformation.Fragments.FirstFragment;
-import com.kumar.dipanshu.viewpagertransformation.Fragments.FourthFragment;
-import com.kumar.dipanshu.viewpagertransformation.Fragments.NinthFragment;
-import com.kumar.dipanshu.viewpagertransformation.Fragments.SecondFragment;
-import com.kumar.dipanshu.viewpagertransformation.Fragments.SeventhFragment;
-import com.kumar.dipanshu.viewpagertransformation.Fragments.SixthFragment;
-import com.kumar.dipanshu.viewpagertransformation.Fragments.TenthFragment;
-import com.kumar.dipanshu.viewpagertransformation.Fragments.ThirdFragment;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.viewpager.widget.ViewPager;
+
+import com.kumar.dipanshu.viewpagertransformation.Fragments.*;
 
 public class CircularViewPager extends AppCompatActivity {
 
@@ -85,21 +77,11 @@ public class CircularViewPager extends AppCompatActivity {
 
             if (position == 0) {
 
-                handler.postDelayed(new Runnable() {
-                    @Override
-                    public void run() {
-                        viewPager.setCurrentItem(10, false);
-                    }
-                }, 500);
+                handler.postDelayed(() -> viewPager.setCurrentItem(10, false), 500);
 
             } else if (position == 11) {
 
-                handler.postDelayed(new Runnable() {
-                    @Override
-                    public void run() {
-                        viewPager.setCurrentItem(1, false);
-                    }
-                }, 500);
+                handler.postDelayed(() -> viewPager.setCurrentItem(1, false), 500);
             }
 
         }

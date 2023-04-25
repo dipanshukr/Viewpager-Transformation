@@ -385,11 +385,10 @@
 
     </ScrollView>
 
-    <android.support.design.widget.FloatingActionButton
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/fab"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/bannerAd"
         android:layout_alignParentEnd="true"
         android:layout_marginBottom="15dp"
         android:layout_marginRight="15dp"

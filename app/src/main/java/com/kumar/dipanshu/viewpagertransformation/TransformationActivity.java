@@ -2,44 +2,11 @@ package com.kumar.dipanshu.viewpagertransformation;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.v4.view.ViewPager;
-import android.support.v7.app.AppCompatActivity;
-import android.widget.ImageView;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.viewpager.widget.ViewPager;
 
-import com.kumar.dipanshu.viewpagertransformation.Fragments.EighthFragment;
-import com.kumar.dipanshu.viewpagertransformation.Fragments.FifthFragment;
-import com.kumar.dipanshu.viewpagertransformation.Fragments.FirstFragment;
-import com.kumar.dipanshu.viewpagertransformation.Fragments.FourthFragment;
-import com.kumar.dipanshu.viewpagertransformation.Fragments.NinthFragment;
-import com.kumar.dipanshu.viewpagertransformation.Fragments.SecondFragment;
-import com.kumar.dipanshu.viewpagertransformation.Fragments.SeventhFragment;
-import com.kumar.dipanshu.viewpagertransformation.Fragments.SixthFragment;
-import com.kumar.dipanshu.viewpagertransformation.Fragments.TenthFragment;
-import com.kumar.dipanshu.viewpagertransformation.Fragments.ThirdFragment;
-import com.kumar.dipanshu.viewpagertransformation.Transformations.AntiClockSpinTransformation;
-import com.kumar.dipanshu.viewpagertransformation.Transformations.Clock_SpinTransformation;
-import com.kumar.dipanshu.viewpagertransformation.Transformations.CubeInDepthTransformation;
-import com.kumar.dipanshu.viewpagertransformation.Transformations.CubeInRotationTransformation;
-import com.kumar.dipanshu.viewpagertransformation.Transformations.CubeInScalingTransformation;
-import com.kumar.dipanshu.viewpagertransformation.Transformations.CubeOutDepthTransformation;
-import com.kumar.dipanshu.viewpagertransformation.Transformations.CubeOutRotationTransformation;
-import com.kumar.dipanshu.viewpagertransformation.Transformations.CubeOutScalingTransformation;
-import com.kumar.dipanshu.viewpagertransformation.Transformations.DepthTransformation;
-import com.kumar.dipanshu.viewpagertransformation.Transformations.FadeOutTransformation;
-import com.kumar.dipanshu.viewpagertransformation.Transformations.FanTransformation;
-import com.kumar.dipanshu.viewpagertransformation.Transformations.FidgetSpinTransformation;
-import com.kumar.dipanshu.viewpagertransformation.Transformations.GateTransformation;
-import com.kumar.dipanshu.viewpagertransformation.Transformations.HingeTransformation;
-import com.kumar.dipanshu.viewpagertransformation.Transformations.HorizontalFlipTransformation;
-import com.kumar.dipanshu.viewpagertransformation.Transformations.PopTransformation;
-import com.kumar.dipanshu.viewpagertransformation.Transformations.SimpleTransformation;
-import com.kumar.dipanshu.viewpagertransformation.Transformations.SlowTransformation;
-import com.kumar.dipanshu.viewpagertransformation.Transformations.SpinnerTransformation;
-import com.kumar.dipanshu.viewpagertransformation.Transformations.TossTransformation;
-import com.kumar.dipanshu.viewpagertransformation.Transformations.VerticalFlipTransformation;
-import com.kumar.dipanshu.viewpagertransformation.Transformations.VerticalShutTransformation;
-import com.kumar.dipanshu.viewpagertransformation.Transformations.ZoomOutTransformation;
-import com.squareup.picasso.Picasso;
+import com.kumar.dipanshu.viewpagertransformation.Fragments.*;
+import com.kumar.dipanshu.viewpagertransformation.Transformations.*;
 
 public class TransformationActivity extends AppCompatActivity {
 
@@ -52,7 +19,7 @@ public class TransformationActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_transformation);
 
-        viewPager = (ViewPager) findViewById(R.id.viewPager);
+        viewPager = findViewById(R.id.viewPager);
 
         pagerAdapter = new MyPagerAdapter(getSupportFragmentManager());
         addingFragmentsTOpagerAdapter();

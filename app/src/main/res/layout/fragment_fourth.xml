@@ -10,7 +10,7 @@
     tools:context="com.kumar.dipanshu.viewpagertransformation.Fragments.FourthFragment">
 
     <!-- TODO: Update blank fragment layout -->
-    <android.support.v7.widget.CardView
+    <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         app:cardCornerRadius="20dp"
@@ -84,6 +84,6 @@
             </LinearLayout>
         </FrameLayout>
 
-    </android.support.v7.widget.CardView>
+    </androidx.cardview.widget.CardView>
 
 </LinearLayout>

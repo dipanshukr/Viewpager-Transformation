@@ -1,8 +1,8 @@
 package com.kumar.dipanshu.viewpagertransformation.Fragments;
 
 import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.support.v4.app.Fragment;
+
+import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -23,15 +23,11 @@ public class FourthFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_fourth, container, false);
-    }
-
-    @Override
-    public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
-        super.onViewCreated(view, savedInstanceState);
-
-        ImageView four = (ImageView) view.findViewById(R.id.fragmentFourBackground);
+        View view = inflater.inflate(R.layout.fragment_fourth, container, false);
+        ImageView four = view.findViewById(R.id.fragmentFourBackground);
 
         Picasso.get().load(R.drawable.four).fit().centerCrop().into(four);
+        return view;
     }
+
 }
